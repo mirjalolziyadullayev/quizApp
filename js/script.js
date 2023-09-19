@@ -177,6 +177,7 @@ function showResult() {
 }
 
 function getFinalMessage() {
+    
     if (correctAnswers === 10) {
         return "You are a genius!";
     } else if (correctAnswers >= 5) {
@@ -184,8 +185,6 @@ function getFinalMessage() {
     } else {
         return "Try harder next time";
     }
-    "your points ", pointsGet.textContent=points 
-    
 }
 
 function resetGame() {
