@@ -173,11 +173,11 @@ function showResult() {
     nextButton.removeEventListener("click", initializeLevel);
     // Add a click event listener to the "Next" button.
     nextButton.addEventListener("click", resetGame);
+    points=0;
     nextButton.style.display = "block";
 }
 
 function getFinalMessage() {
-    
     if (correctAnswers === 10) {
         return "You are a genius!";
     } else if (correctAnswers >= 5) {
@@ -185,12 +185,13 @@ function getFinalMessage() {
     } else {
         return "Try harder next time";
     }
+
 }
 
 function resetGame() {
     currentLevel = 0;
     correctAnswers = 0;
-    incorrectAnswers = 0;
+    incorrectAnswers = 0; 
     // Remove the click event listener from the "Next" button.
     nextButton.removeEventListener("click", resetGame);
     initializeLevel();
