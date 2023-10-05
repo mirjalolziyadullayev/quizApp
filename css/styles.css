@@ -1,21 +1,26 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background: url("https://cdn.pixabay.com/photo/2015/04/23/21/59/tree-736877_1280.jpg")no-repeat center center fixed;
+    background-size: cover;
     margin: 0;
     padding: 0;
 }
 
 #game-container {
+    background-color: #e0ffffc5;
+    min-width: 900px;
     text-align: center;
     margin: 50px auto;
     max-width: 600px;
     padding: 20px;
-    border: 2px solid #ccc;
+    border: 2px solid #cccccc71;
     border-radius: 10px;
-    background-color: #fff;
 }
 
 .option {
+    border: 1px solid green;
+    margin: 10px;
+    padding: 20px;
     display: block;
     margin: 10px auto;
     padding: 10px 20px;
@@ -47,13 +52,13 @@ body {
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 18px;
-    background-color: #007bff;
-    color: #fff;
+    background-color: #00ff73;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-#next-button:hover {
-    background-color: #0056b3;
+#next-button:active {
+    background-color: #0ccf5d;
 }
